@@ -10,6 +10,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored WebGL/canvas effect components: imperative refs and
+    // manual render loops are intentional here and not meant to be
+    // refactored to satisfy React Compiler-oriented hook rules.
+    "src/components/effects/**",
   ]),
 ]);
 
